@@ -1,0 +1,135 @@
+/* CSS Reset */
+@charset "utf-8";
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, 
+dl, dt, dd, ul, ol, li, 
+form, button, input, textarea, fieldset, legend, 
+th, td, 
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体样式 */
+body, a, button, input, select, textarea {
+    color: #333;
+    line-height: 1;
+    font-size: 14px;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 清除部分端默认样式 */
+button, input, select, textarea {
+    outline: none;
+	vertical-align: middle;
+	-ms-appearance: none;
+	-moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/* 修改placeholder的颜色 */
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder{
+    color: #ccc;
+}
+input::-moz-placeholder, 
+textarea::-moz-placeholder{
+    color: #ccc;
+}
+input:-moz-placeholder, 
+textarea:-moz-placeholder{
+    color: #ccc;
+}
+input:-ms-input-placeholder, 
+textarea:-ms-input-placeholder{
+    color: #ccc;
+}
+
+/* 修改disabled的默认样式 */
+input[disabled], 
+input:disabled, 
+input.disabled, 
+textarea[disabled], 
+textarea:disabled, 
+textarea.disabled, 
+select[disabled], 
+select:disabled, 
+select.disabled {
+    background: transparent;
+    -webkit-text-fill-color: #ccc;
+    color: #ccc;
+	-webkit-opacity: 1;
+    opacity: 1;
+}
+
+/* 重置a标签文本格式 */
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+/* 重置span、em、i标签文本格式 */
+span, em , i {
+	display: inline-block;
+	font-style: normal;
+}
+
+/* 重置h标签 */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* 重置列表元素 */
+ul, ol {
+	list-style: none;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+	clear: both;
+	display: block;
+	height: 0;
+	content: "";
+	visibility: hidden;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* 重置 hr */
+hr {
+	display: block;
+    border: none;
+    height: 1px;
+}
+
+/* 重置 pre */
+pre {
+    white-space: pre-wrap;
+	word-wrap: break-word;
+}
+code {
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 重置 blockquote, q 标签 */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, 
+q:before, q:after {
+	content: "";
+}
+
+/* Vue未编译处理 */
+[v-cloak] {
+    display: none;
+}

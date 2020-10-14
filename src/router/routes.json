@@ -1,0 +1,201 @@
+[{
+	"path": "/",
+	"name": "index",
+	"meta": {
+		"title": "应用中心",
+		"hideMenu": true
+	},
+    "component": "Layout",
+    "redirect": "/application",
+	"children": [{
+		"path": "/application",
+		"name": "application",
+		"meta": {
+			"title": "数据看版"
+		},
+		"component": "application"
+	}]
+}, {
+	"path": "/account-management",
+    "name": "account-management",
+	"meta": {
+		"title": "帐号管理",
+		"hideMenu": true
+	},
+	"component": "Layout",
+	"children": [{
+		"path": "/change-password",
+		"name": "change-password",
+		"meta": {
+			"title": "修改密码"
+		},
+		"component": "change-password"
+	}]
+}, {
+	"path": "/ticket-management",
+	"name": "ticket-management",
+	"meta": {
+		"title": "工单管理",
+		"icon": "el-icon-folder-opened"
+	},
+	"component": "Layout",
+    "redirect": "/ticket-release",
+	"children": [{
+		"path": "/ticket-release",
+		"name": "ticket-release",
+		"meta": {
+			"title": "发布工单"
+		},
+		"component": "ticket-management/ticket-release"
+	}, {
+		"path": "/ticket-release/change-template",
+		"name": "ticket-release/change-template",
+		"meta": {
+			"title": "模版",
+			"fullTitle": "发布工单 - 模版",
+			"hideMenu": true
+		},
+		"component": "ticket-management/change-template"
+	}, {
+		"path": "/ticket-order",
+		"name": "ticket-order",
+		"meta": {
+			"title": "所有工单"
+		},
+		"component": "ticket-management/ticket-order"
+	}, {
+		"path": "/wait-check-review",
+		"name": "wait-check-review",
+		"meta": {
+			"title": "待审核的",
+			"fullTitle": "待审核的(待我审核的)"
+		},
+		"component": "ticket-management/wait-check-review"
+	}, {
+		"path": "/wait-check-release",
+		"name": "wait-check-release",
+		"meta": {
+			"title": "待审核的",
+			"fullTitle": "待审核的(我发布的)",
+			"hideMenu": true
+		},
+		"component": "ticket-management/wait-check-release"
+	}, {
+		"path": "/wait-reply",
+		"name": "wait-reply",
+		"meta": {
+			"title": "待回复的"
+		},
+		"component": "ticket-management/wait-reply"
+	}, {
+		"path": "/ticket-process-review",
+		"name": "ticket-process-review",
+		"meta": {
+			"title": "我处理的",
+			"fullTitle": "我处理的(工单)"
+		},
+		"component": "ticket-management/ticket-process-review"
+	}, {
+		"path": "/ticket-process-child",
+		"name": "ticket-process-child",
+		"meta": {
+			"title": "我处理的",
+			"fullTitle": "我处理的(子工单)",
+			"hideMenu": true
+		},
+		"component": "ticket-management/ticket-process-child"
+	}, {
+		"path": "/ticket-release-review",
+		"name": "ticket-release-review",
+		"meta": {
+			"title": "我发布的",
+			"fullTitle": "我发布的(工单)"
+		},
+		"component": "ticket-management/ticket-release-review"
+	}, {
+		"path": "/ticket-release-child",
+		"name": "ticket-release-child",
+		"meta": {
+			"title": "我发布的",
+			"fullTitle": "我发布的(子工单)",
+			"hideMenu": true
+		},
+		"component": "ticket-management/ticket-release-child"
+	}, {
+		"path": "/ticket-involves",
+		"name": "ticket-involves",
+		"meta": {
+			"title": "我参与的"
+		},
+		"component": "ticket-management/ticket-involves"
+	}, {
+		"path": "/ticket-timeout",
+		"name": "ticket-timeout",
+		"meta": {
+			"title": "超时工单"
+		},
+		"component": "ticket-management/ticket-timeout"
+	}]
+}, {
+	"path": "/ticket-set",
+	"name": "ticket-set",
+	"meta": {
+		"title": "工单设置",
+		"icon": "el-icon-setting"
+	},
+	"component": "Layout",
+    "redirect": "/template-type",
+	"children": [{
+		"path": "/template-type",
+		"name": "template-type",
+		"meta": {
+			"title": "模板类型"
+		},
+		"component": "ticket-set/template-type"
+	}, {
+		"path": "/ticket-template",
+		"name": "ticket-template",
+		"meta": {
+			"title": "工单模板"
+		},
+		"component": "ticket-set/ticket-template"
+	}, {
+		"path": "/ticket-theme",
+		"name": "ticket-theme",
+		"meta": {
+			"title": "工单主题"
+		},
+		"component": "ticket-set/ticket-theme"
+	}, {
+		"path": "/ticket-status",
+		"name": "ticket-status",
+		"meta": {
+			"title": "工单状态"
+		},
+		"component": "ticket-set/ticket-status"
+	}]
+}, {
+	"path": "/check-management",
+	"name": "check-management",
+	"meta": {
+		"title": "审核管理",
+		"icon": "el-icon-s-check"
+	},
+	"component": "Layout",
+    "redirect": "/check-step",
+	"children": [{
+		"path": "/check-step",
+		"name": "check-step",
+		"meta": {
+			"title": "审核流程管理"
+		},
+		"component": "check-management/check-step"
+	}, {
+		"path": "/check-rule",
+		"name": "check-rule",
+		"meta": {
+			"title": "审核规则管理"
+		},
+		"component": "check-management/check-rule"
+	}]
+}]

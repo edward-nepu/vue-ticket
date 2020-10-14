@@ -1,0 +1,151 @@
+
+// el-dialog
+.el-dialog {
+    .el-dialog__header {
+        padding: 7px 10px;
+        background: $color-f1f1f1;
+        border-bottom: 1px solid $color-e5e5e5;
+    }
+    .el-dialog__title {
+        font-size: 14px;
+    }
+    .el-dialog__headerbtn {
+        top: 12px;
+    }
+    .el-dialog__body {
+        padding: 10px;
+    }
+    .el-dialog__footer {
+        padding: 10px;
+        border-top: 1px solid $color-e5e5e5;
+    }
+}
+.el-popover {
+    &.el-popper {
+        min-width: 50px;
+        font-size: 12px;
+    }
+}
+.el-upload-list__item-name {
+    line-height: 1.5;
+}
+// 导航
+.menu-main {
+    .menu-list {
+        background: transparent;
+        border: none;
+        user-select: none;
+        .el-submenu {
+            .el-submenu__title {
+                color: $color-a0abbf;
+                i {
+                    color: $color-a0abbf;
+                    transition: all .3s;
+                }
+                &:hover {
+                    background: transparent;
+                    color: $color-fff;
+                    i {
+                        color: $color-fff;
+                    }
+                }
+                &:focus {
+                    background: transparent;
+                    color: $color-fff;
+                }
+            }
+            &.is-opened {
+                .el-submenu__title {
+                    color: $color-fff;
+                }
+                i {
+                    color: $color-fff;
+                }
+            }
+            .el-menu {
+                background: $color-141b27;
+                .el-menu-item {
+                    min-width: auto;
+                    color: $color-a0abbf;
+                    &.is-active {
+                        color: $color-fff;
+                    }
+                    &:hover {
+                        background: transparent;
+                        color: $color-fff;
+                    }
+                    &:focus {
+                        background: transparent;
+                        color: $color-fff;
+                    }
+                }
+            }
+        }
+    }
+}
+// 上传图片
+.upload-custom-pic {
+    .el-upload-list--picture-card {
+        display: inline-block;
+        .el-upload-list__item {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .el-upload--picture-card {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+}
+// 显示已完成
+.tools-show-done {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row-reverse;
+    .el-checkbox__label {
+        padding: 0 5px 0 0;
+    }
+}
+// 处理人筛选搜索内容隐藏
+.department-autocomplete {
+    display: none;
+}
+// 导入
+.ticket-upload {
+    .el-upload, 
+    .el-upload-dragger {
+        width: 100%;
+    }
+    .el-upload-dragger {
+        margin: 10px 0;
+    }
+}
+// 没有数据显示
+.null-data {
+    padding: 20px 0;
+    color: $color-ccc;
+    text-align: center;
+}
+// 数据显示部分
+.tiket-table {
+    overflow-y: auto;
+    flex: 1;
+}
+// 自动撑开部分
+.view-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.view-auto {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+// 表单操作icon样式
+.el-dropdown-link.el-icon-more-outline {
+    padding: 5px 10px;
+    cursor: pointer;
+}
